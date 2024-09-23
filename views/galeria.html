@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- LENGUAJE DE BUSQUEDA -->
+<html lang="es">
+<!-- CONFIGURACION DE LA WEB -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seigro</title> 
+<!-- CSS -->
+        <link rel="stylesheet" href="../css/estilos.css">
+<!-- FAVICON -->
+        <link rel="icon" href="../favicon.jpg?v=2" type="image/jpg">
+    </head>
+<!-- CONTENIDO PARA EL USUARIO -->
+    <body>
+<!-- CABECERA -->
+<header>
+    <div class="navbox">
+        <h1>- Seigro -</h1>
+<!-- BARRA DE NAVEGACION -->
+        <nav class="navbar">
+<!-- MENU HAMBURGUESA -->
+            <button class="menuham" aria-label="Abrir menú">
+                <span class="menuicono"></span>
+                <span class="menuicono"></span>
+                <span class="menuicono"></span>
+            </button>
+<!-- LOGOTIPO -->                   
+            <img src="../assets/images/logotipo.png" alt="Logotipo" class="logo">
+<!-- ENLACES INTERNOS -->
+            <ul class="navlinks">
+                <li><a href="../index.html">Índice</a></li>
+                <li><a href="#" class="activo">Galería</a></li>
+                <li><a href="./presupuesto.html">Presupuesto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <form class="search">
+                <input type="search" name="search" class="search" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+        </nav>
+    </div>
+</header>
+<!-- CONTENIDO PRINCIPAL GALERIA-->
+        <main>
+             <div class="mainbox">
+<!-- SECTION -->
+                <section class="contenidogal">
+<!-- GALERIA DINAMICA -->
+                    <h2>Galería</h2>
+                    <div class="carousel">
+                        <button class="prev">&#10094;</button>
+                        <div class="galeria"></div>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </section>
+<!-- ASIDE -->
+                <aside class="lateral">
+                    <h3>Más Noticias</h3>
+<!-- ARTICULOS -->
+                    <article class="art">
+                        <h4>Título artículo</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, ullam non? Fugiat totam asperiores, facilis tempore commodi nemo vel quasi quia consectetur. Officiis natus impedit inventore fugiat alias, et excepturi.</p>
+                    </article>
+                    <article class="art">
+                        <h4>Título artículo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ut magni voluptate, doloribus laudantium eligendi minima vitae, sequi nisi hic cum rerum dignissimos dolorem vel ducimus nam architecto, deleniti molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quisquam enim maiores ab dignissimos excepturi doloremque impedit labore provident laborum saepe quibusdam ipsum, cum expedita itaque obcaecati commodi totam! Totam.</p>
+                    </article>
+<!-- ARTICULO JSON -->
+                    <article id="artjson" class="art"></article>
+                </aside>
+            </div>
+        </main>
+<!-- PIE DE PAGINA -->
+        <footer>
+<!-- REDES SOCIALES -->
+            <div class="footerbox">
+                <div class="redes">
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="../assets/images/facebook.png" alt="Logotipo de Facebook" class="logoredes" width="512" height="512">
+                    </a>
+                    <a href="http://x.com" target="_blank">
+                        <img src="../assets/images/x.png" alt="Logotipo de X" class="logoredes" width="512" height="512">
+                    </a>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="../assets/images/instagram.png" alt="Logotipo de Instagram" class="logoredes" width="512" height="512">
+                    </a>
+                </div>
+                <hr class="linea">
+<!-- DIRECCION Y AVISO LEGAL -->
+                <p class="direccion">Calle Falsa 123, Barcelona.</p>
+                <p class="copy">Copyright © 2024 Seigro</p>
+            </div>
+        </footer>
+<!-- JAVASCRIPT -->
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>

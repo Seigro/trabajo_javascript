@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- INDICAMOS QUE EL LENGUAJE DE BUSQUEDA -->
+<html lang="es">
+<!-- CONFIGURACION DE LA WEB -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seigro</title> 
+<!--CSS-->
+        <link rel="stylesheet" href="../css/estilos.css">
+<!--FAVICON-->
+        <link rel="icon" href="../favicon.jpg?v=2" type="image/jpg">
+    </head>
+<!-- CONTENIDO PARA EL USUARIO -->
+    <body>
+<!-- CABECERA -->
+        <header>
+    <div class="navbox">
+        <h1>- Seigro -</h1>
+<!-- BARRA DE NAVEGACION -->
+        <nav class="navbar">
+<!-- MENU HAMBURGUESA -->
+            <button class="menuham" aria-label="Abrir menú">
+                <span class="menuicono"></span>
+                <span class="menuicono"></span>
+                <span class="menuicono"></span>
+            </button>
+<!-- LOGOTIPO -->                   
+            <img src="../assets/images/logotipo.png" alt="Logotipo" class="logo">
+<!-- ENLACES INTERNOS -->
+            <ul class="navlinks">
+                <li><a href="../index.html">Índice</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="#" class="activo">Presupuesto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <form class="search">
+                <input type="search" name="search" class="search" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+        </nav>
+    </div>
+        </header>
+<!--CONTENIDO PRINCIPAL PRESUPUESTO-->
+        <main>
+            <div class="mainbox">
+<!-- SECTION -->
+                <section class="contenidoppto">
+                    <h2>Solicitud de Presupuesto</h2>
+<!-- FORMULARIO -->
+                    <form>
+<!-- DATOS PERSONALES -->
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" maxlength="40" required>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" id="telefono" name="telefono" maxlength="9" required>
+                            <label for="email">Correo:</label>
+                            <input type="email" id="email" name="email" required>
+                        </fieldset>
+<!-- PRESUPUESTO -->
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <label for="producto">Productos:</label>
+                            <select id="producto" name="producto" required>
+                                <option value="" disabled selected>Elija un producto...</option>
+                                <option value="100">Producto 1 - 100€</option>
+                                <option value="200">Producto 2 - 200€</option>
+                                <option value="300">Producto 3 - 300€</option>
+                                <option value="400">Producto 4 - 400€</option>
+                                <option value="500">Producto 5 - 500€</option>
+                            </select>
+                            <label for="plazo">Plazo (si es superior a 3 meses, se aplica un descuento del 10%):</label>
+                            <input type="number" id="plazo" name="plazo" min="1" required>
+                            <fieldset>
+                                <legend>Extras</legend>
+                                <label><input type="checkbox" name="extra" value="50"> Extra 1 - 50€</label>
+                                <label><input type="checkbox" name="extra" value="100"> Extra 2 - 100€</label>
+                                <label><input type="checkbox" name="extra" value="150"> Extra 3 - 150€</label>
+                            </fieldset>
+                            <p><strong>Presupuesto Final:</strong><span id="presupuestoFinal">0</span>€</p>
+                        </fieldset>
+<!-- CONDICIONES Y ENVIO -->
+                        <fieldset>
+                            <legend>Condiciones de aceptación</legend>
+                            <label><input type="checkbox" id="condiciones" required> Acepto las condiciones de privacidad</label>
+                        </fieldset>
+                        <input type="submit" id="sendform" value="Enviar">
+                    </form>
+                </section>
+<!-- ASIDE -->
+                <aside class="lateral">
+                    <h3>Más Noticias</h3>
+<!-- ARTICULOS -->
+                    <article class="art">
+                        <h4>Título artículo</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, ullam non? Fugiat totam asperiores, facilis tempore commodi nemo vel quasi quia consectetur. Officiis natus impedit inventore fugiat alias, et excepturi.</p>
+                    </article>
+                    <article class="art">
+                        <h4>Título artículo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ut magni voluptate, doloribus laudantium eligendi minima vitae, sequi nisi hic cum rerum dignissimos dolorem vel ducimus nam architecto, deleniti molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quisquam enim maiores ab dignissimos excepturi doloremque impedit labore provident laborum saepe quibusdam ipsum, cum expedita itaque obcaecati commodi totam! Totam..</p>
+                    </article>
+<!-- ARTICULO JSON -->
+                    <article id="artjson" class="art"></article>
+                </aside>
+            </div>            
+        </main>
+<!-- PIE DE PAGINA -->
+        <footer>
+<!-- REDES SOCIALES -->
+            <div class="footerbox">
+                <div class="redes">
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="../assets/images/facebook.png" alt="Logotipo de Facebook" class="logoredes" width="512" height="512">
+                    </a>
+                    <a href="http://x.com" target="_blank">
+                        <img src="../assets/images/x.png" alt="Logotipo de X" class="logoredes" width="512" height="512">
+                    </a>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="../assets/images/instagram.png" alt="Logotipo de Instagram" class="logoredes" width="512" height="512">
+                    </a>
+                </div>
+                <hr class="linea">
+<!-- DIRECCION Y AVISO LEGAL -->
+                <p class="direccion">Calle Falsa 123, Barcelona.</p>
+                <p class="copy">Copyright © 2024 Seigro</p>
+            </div>
+        </footer>
+<!-- JAVASCRIPT -->
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
